@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        app:tabBackground="@color/yellow"
+        app:tabIconTint="@color/yellow"
+        app:tabInlineLabel="true"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/grey"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/yellow"
+        android:src="@drawable/ic_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
